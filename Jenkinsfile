@@ -4,6 +4,9 @@ pipeline {
             label 'AGENT-1'
         }
     }
+    environment {
+        GREETING = 'Hello Jenkins'
+    }
     // build 
     stages{
         
@@ -19,7 +22,9 @@ pipeline {
         }
         stage ('Deploy') {
             steps {
-                echo 'Deploying..'
+                sh """
+                    echo "Here I wrote in shell script"
+                """
             }
         }
         
