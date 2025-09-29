@@ -7,6 +7,11 @@ pipeline {
     environment {
         GREETING = 'Hello Jenkins'
     }
+    options {
+        timeout(time: 1, unit: 'SECONDS')
+        //This pipeline should complete in 1 second. Timeout counter starts AFTER agent is allocated
+    }
+
     // build 
     stages{
         
