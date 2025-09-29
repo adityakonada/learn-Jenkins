@@ -8,8 +8,8 @@ pipeline {
         GREETING = 'Hello Jenkins'
     }
     options {
-        timeout(time: 1, unit: 'SECONDS')
-        //This pipeline should complete in 1 second. Timeout counter starts AFTER agent is allocated
+        timeout(time: 5, unit: 'SECONDS')
+        //This pipeline should complete in 2 second. Timeout counter starts AFTER agent is allocated
     }
 
     // build 
