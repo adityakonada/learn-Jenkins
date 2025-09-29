@@ -20,13 +20,15 @@ pipeline {
                 echo 'Testing..'
             }
         }
+
         stage ('Deploy') {
             steps {
                 sh """
                     echo "Here I wrote in shell script"
-                    env // this loc gave the added many lines in output, to get external system urls and access them in desired stages.
+                    env 
                 """
             }
+        // this loc gave the added many lines in output, to get external system urls and access them in desired stages.
         }    
         stage ('shell-env combo variable') {
             steps {
