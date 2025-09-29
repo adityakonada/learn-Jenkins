@@ -41,7 +41,7 @@ pipeline {
         stage ('Deploy') {
             steps {
                 sh """
-                    echo "Here I wrote in shell script"
+                    echo "Here I wrote this in shell script"
                     env 
                 """
             }
