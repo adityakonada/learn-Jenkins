@@ -24,7 +24,15 @@ pipeline {
             steps {
                 sh """
                     echo "Here I wrote in shell script"
-                    env
+                    env // this loc gave the added many lines in output, to get external system urls and access them in desired stages.
+                """
+            }
+        }    
+        stage ('shell-env combo variable') {
+            steps {
+                sh """
+                    echo "Here I wrote in shell script"
+                    echo "$GREETING"
                 """
             }
         }
