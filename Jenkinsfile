@@ -24,6 +24,7 @@ pipeline {
             steps {
                 sh """
                     echo "Here I wrote in shell script"
+                    env
                 """
             }
         }
