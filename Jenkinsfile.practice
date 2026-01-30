@@ -44,7 +44,7 @@ pipeline {
         stage('checking practice parameters') {
             steps{
                 sh """
-                    echo "Hello ${params.PRACTICE-PERSON-HERO}"
+                    echo "Hello ${params.PERSON}"
 
                     echo "Biography: ${params.BIOGRAPHY}"
 
