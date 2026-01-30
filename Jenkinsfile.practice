@@ -1,7 +1,7 @@
 pipeline {
     agent {
         node {
-            label 'AKHIL 1'
+            label 'AKHIL-1'
         }
     }
     // BUILDING
