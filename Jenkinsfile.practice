@@ -5,7 +5,7 @@ pipeline {
         }
     }
     environment {
-        GREET 2 = 'hey there jenko-practice'
+        GREET2 = 'hey there jenko-practice'
     }
     options {
         timeout(time:1, unit='HOURS')
