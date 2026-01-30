@@ -45,7 +45,7 @@ pipeline {
                     env 
                 """
             }
-        // this loc gave the added many lines in output, to get external system urls and access them in desired stages.
+        // this env in loc gave the added many lines in output, to get external system urls and access them in desired stages.
         }    
         stage ('shell-env combo variable') {
             steps {

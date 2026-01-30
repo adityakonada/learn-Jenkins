@@ -1,0 +1,26 @@
+pipeline {
+    agent {
+        node {
+            label 'AKHIL 1'
+        }
+    }
+    // BUILDING
+    stages {
+
+        stage('Build') {
+            steps{
+                echo " Buidling here"
+            }
+        }
+        stage('Test') {
+            steps{
+                echo "Testing here"
+            }
+        }
+        stage('Deploy') {
+            steps{
+                echo "Deploying here"
+            }
+        }
+    }
+}
