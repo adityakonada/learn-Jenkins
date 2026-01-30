@@ -8,7 +8,7 @@ pipeline {
         GREET2 = 'hey there jenko-practice'
     }
     options {
-        timeout(time:1, unit='HOURS')
+        timeout(time:1, unit:'HOURS')
         disableConcurrentBuilds()
     }
     parameters{
