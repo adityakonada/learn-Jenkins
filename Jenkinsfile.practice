@@ -1,9 +1,9 @@
 pipeline {
-    agent {
-        node {
-            label 'AKHIL-1'
-        }
-    }
+     agent  any 
+    // {    node {
+    //         label 'AKHIL-1'
+    //  }   }
+    
     environment {
         GREET2 = 'hey there jenko-practice'
     }
